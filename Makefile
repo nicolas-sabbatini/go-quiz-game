@@ -3,7 +3,7 @@ PATH_TO_BINARY=./cmd/quizes
 .DEFAULT_GOAL := run
 
 run:
-	go run ${PATH_TO_BINARY}/${BINARYNAME}.go
+	go run ${PATH_TO_BINARY}/${BINARYNAME}.go $(args)
 
 build-linux:
 	GOARCH=amd64 GOOS=linux go build -o target/${BINARYNAME}-linux-amd64 ${PATH_TO_BINARY}/${BINARYNAME}.go
