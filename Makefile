@@ -20,3 +20,7 @@ build: build-linux
 
 clear:
 	rm -rf target
+	go clean
+
+tidy:
+	go mod tidy
